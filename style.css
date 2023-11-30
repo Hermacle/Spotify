@@ -403,23 +403,30 @@ li {
   height: auto;
 }
 
+
+
+
 .albums .music-card .play-icone {
-  /* position: absolute; */
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  font-size: 34px;
-  background-color: #1ed760;
-  color: black;
-  border-radius: 50%;
-  transition: 0.2s;
-  margin-top: -52px;
-  margin-left: 112px;
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
   opacity: 0;
+  transition: all ease 0.4s;
 }
+
+.music-card:hover .play-icone {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+
+
+
+
+
 
 .albums .music-card:hover .play-icone {
   opacity: 1;
